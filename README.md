@@ -6,6 +6,6 @@ Downloads the [pocketbase](https://pocketbase.io/) binary for use in npm/npx scr
 # Example npm script usage
 ```
 "scripts": {
-  "start-pb": "pocketbase",
+  "start-pb": "pocketbase serve",
 },
 ```
