@@ -1,13 +1,11 @@
 # node-mkcert-binary
-Downloads the mkcert binary for use in npm/npx scripts
+Downloads the [pocketbase](https://pocketbase.io/) binary for use in npm/npx scripts
 
-- Downloads the latest version of mkcert
-- No dependencies
+- Downloads the latest version of pocketbase
 
 # Example npm script usage
 ```
 "scripts": {
-    "generate-cert": "mkcert *.local.dev",
-    "install-cert": "mkcert --install",
-  },
+  "start-pb": "pocketbase",
+},
 ```

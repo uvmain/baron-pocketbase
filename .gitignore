@@ -1,5 +1,5 @@
 node_modules
-mkcert
-mkcert.exe
-*.pem
+pocketbase
+pocketbase.exe
 package-lock.json
+*.zip

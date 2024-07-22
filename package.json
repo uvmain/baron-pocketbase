@@ -1,27 +1,27 @@
 {
-  "name": "node-mkcert-binary",
+  "name": "node-pocketbase-binary",
   "version": "2.1.5",
-  "description": "Install mkcert",
+  "description": "Install pocketbase",
   "bin": {
-    "mkcert": "./mkcert"
+    "pocketbase": "./pocketbase"
   },
   "scripts": {
     "install": "node index.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uvmain/node-mkcert-binary.git"
+    "url": "git+https://github.com/uvmain/node-pocketbase-binary.git"
   },
   "keywords": [
-    "mkcert",
-    "ssl",
-    "certificate",
-    "tls"
+    "pocketbase"
   ],
   "author": "Ian Baron",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uvmain/node-mkcert-binary/issues"
+    "url": "https://github.com/uvmain/node-pocketbase-binary/issues"
   },
-  "homepage": "https://github.com/uvmain/node-mkcert-binary#readme"
+  "homepage": "https://github.com/uvmain/node-pocketbase-binary#readme",
+  "dependencies": {
+    "@xhmikosr/decompress": "^10.0.1"
+  }
 }
