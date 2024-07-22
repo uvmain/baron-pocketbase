@@ -1,9 +1,9 @@
 {
-  "name": "node-pocketbase-binary",
+  "name": "pocketbase-baron",
   "version": "0.0.2",
   "description": "Install pocketbase",
   "bin": {
-    "pocketbase": "./pocketbase"
+    "pocketbase": "pocketbase"
   },
   "scripts": {
     "install": "node index.mjs"
