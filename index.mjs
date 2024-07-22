@@ -80,6 +80,9 @@ async function downloadFile(downloadUrl) {
 async function unzip() {
   decompress(fileString, './').then(files => {
     console.log('file decompressed');
+    if (process.platform === "win32") {
+      fs.copyFileSync('./pocketbase.exe', './pocketbase')
+    }
   });
 }
 
