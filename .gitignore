@@ -1,6 +1,6 @@
 node_modules
+pb_data
 pocketbase
 pocketbase.exe
 package-lock.json
 *.zip
-pb_data
