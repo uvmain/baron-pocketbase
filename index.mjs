@@ -78,11 +78,17 @@ async function downloadFile(downloadUrl) {
 }
 
 async function unzip() {
-  decompress(fileString, './').then(files => {
+  decompress(fileString, './', {
+    filter: file => {
+      return file.path.startsWith('pocketbase') || file.path.startsWith('LICEN')
+    }
+  }).then(() => {
     console.log('file decompressed');
     if (process.platform === "win32") {
       fs.copyFileSync('./pocketbase.exe', './pocketbase')
     }
+    fs.unlinkSync(fileString)
+    fs.renameSync('./LICENSE.md', './LICENSE.pb.md')
   });
 }
 

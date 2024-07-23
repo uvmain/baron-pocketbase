@@ -1,6 +1,6 @@
 {
-  "name": "pocketbase-baron",
-  "version": "0.0.2",
+  "name": "node-pocketbase-binary",
+  "version": "0.0.4",
   "description": "Install pocketbase",
   "bin": {
     "pocketbase": "pocketbase"
