@@ -1,5 +1,5 @@
 node_modules
 pb_data
 LICENSE.pb.md
-pocketbase.exe
+bin/pocketbase.exe
 *.zip
