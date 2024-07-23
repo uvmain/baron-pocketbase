@@ -1,4 +1,4 @@
-# node-mkcert-binary
+# node-pocketbase-binary
 Downloads the [pocketbase](https://pocketbase.io/) binary for use in npm/npx scripts
 
 - Downloads the latest version of pocketbase
