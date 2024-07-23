@@ -61,10 +61,10 @@ async function downloadFile(downloadUrl) {
 
       res.pipe(writeStream);
 
-      writeStream.on('finish', () => {
+      writeStream.on('finish', async () => {
         writeStream.close();
         console.log('Download Completed');
-        unzip();
+        await unzip();
       });
     }
     else {
@@ -78,17 +78,11 @@ async function downloadFile(downloadUrl) {
 }
 
 async function unzip() {
-  decompress(fileString, './', {
-    filter: file => {
-      return file.path.startsWith('pocketbase') || file.path.startsWith('LICEN')
-    }
-  }).then(() => {
+  decompress(fileString, './').then(() => {
     console.log('file decompressed');
     if (process.platform === "win32") {
-      fs.copyFileSync('./pocketbase.exe', './pocketbase')
+      fs.copyFileSync('./pocketbase.exe', './pocketbase');
     }
-    fs.unlinkSync(fileString)
-    fs.renameSync('./LICENSE.md', './LICENSE.pb.md')
   });
 }
 
